@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    username: postgres
+    password: postgres
+  sql:
+    init:
+      platform: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
