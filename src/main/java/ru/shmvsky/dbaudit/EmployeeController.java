@@ -29,7 +29,7 @@ public class EmployeeController {
 			return ResponseEntity.status(HttpStatus.OK).body(employee.get());
 		}
 
-		throw new EmployeeNotFoundException("NIGGER");
+		throw new EmployeeNotFoundException("Employee not found");
 
 	}
 

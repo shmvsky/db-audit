@@ -1,16 +1,21 @@
+server:
+  error:
+    include-binding-errors: always
+    include-exception: false
+    include-message: always
+    include-stacktrace: never
+  port: 1337
 spring:
   datasource:
+    driver-class-name: org.h2.Driver
+    password: h2
     url: jdbc:h2:mem:employee
     username: h2
-    password: h2
-    driver-class-name: org.h2.Driver
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    database: h2
-    show-sql: true
   h2:
     console:
       enabled: true
       path: /h2
-server:
-  port: 1337
+  jpa:
+    database: h2
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
